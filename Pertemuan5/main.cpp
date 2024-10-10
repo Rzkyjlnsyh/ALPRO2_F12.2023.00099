@@ -2,24 +2,31 @@
 
 using namespace std;
 
-// Fungsi ganjil apa genap ya
+// Fungsi ganjil apa genap
 string ganjil_genap(int angka) {
-
-    if (angka % 2==0) {
+    if (angka % 2 == 0) {
     return "genap";
     }
     return "ganjil";
 }
-int main()
-{
+// Fungsi kelipatan 3
+string kelipatan_tiga(int angka) {
+    if (angka % 3 == 0) {
+    return "kelipatan 3";
+    }
+    return "bukan kelipatan 3";
+}
+int main() {
     int angka;
-    cout << "masukan bilangannya: ";
+    cout << "masukkan bilangannya: ";
     cin >> angka;
-    // TAMPILAN GANJIL/AGENAP
-    cout << angka << " adalah bilangan " << ganjil_genap(angka) <<endl;
-
+    // TAMPILAN GANJIL/GENAP
+    cout << angka << " adalah bilangan " << ganjil_genap(angka) << endl;
+    // TAMPILAN KELIPATAN 3
+    cout << angka << " itu " << kelipatan_tiga(angka) << endl;
     return 0;
 }
+
 
 
 /* CONTOH KALO FUNGSI MAX SAMA GANJIL GENAP DI PADU */
